@@ -62,7 +62,6 @@
     _showNavigationBar = NO;
     [self.navigationController setNavigationBarHidden:_showNavigationBar];
     _weexHeight = self.view.frame.size.height - CGRectGetMaxY(self.navigationController.navigationBar.frame);
-    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationRefreshInstance:) name:@"RefreshInstance" object:nil];
     [self render];
 }
@@ -82,8 +81,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    // [self setupNaviBar];
-    // [self setupRightBarItem];
     [self.navigationController setNavigationBarHidden:_showNavigationBar];
 }
 

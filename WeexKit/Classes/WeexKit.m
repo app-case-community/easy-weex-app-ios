@@ -14,6 +14,9 @@
 #import "WXNavigationHandlerImpl.h"
 #import "WXSyncTestModule.h"
 
+#import <BindingX/EBWXModule.h>
+#import <BindingX/EBWXOldModule.h>
+
 @implementation WeexKit
 
 +(void)initWeex {
@@ -33,6 +36,10 @@
     [WXSDKEngine registerModule:@"syncTest" withClass:[WXSyncTestModule class]];
     [WXSDKEngine registerModule:@"titleBar" withClass:NSClassFromString(@"WXTitleBarModule")];
     
+    [WXSDKEngine registerModule:@"bindingx" withClass:[EBWXModule class]];
+    [WXSDKEngine registerModule:@"binding" withClass:[EBWXModule class]];
+    [WXSDKEngine registerModule:@"expressionBinding" withClass:[EBWXOldModule class]];
+
 }
 
 @end
