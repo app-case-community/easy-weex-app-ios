@@ -96,7 +96,8 @@
         // Fallback on earlier versions
     }
 #endif
-    _instance.frame = CGRectMake(safeArea.left, safeArea.top, self.view.frame.size.width-safeArea.left-safeArea.right, _weexHeight-safeArea.top-safeArea.bottom);
+    CGFloat height = CGRectGetHeight(self.view.frame) - safeArea.top - safeArea.bottom;  // _weexHeight-safeArea.top-safeArea.bottom;
+    _instance.frame = CGRectMake(safeArea.left, safeArea.top, self.view.frame.size.width-safeArea.left-safeArea.right, height);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -137,8 +138,8 @@
         // Fallback on earlier versions
     }
 #endif
-    
-    _instance.frame = CGRectMake(self.view.frame.size.width-width, 0, width, _weexHeight-safeArea.bottom);
+    CGFloat height = CGRectGetHeight(self.view.frame) - safeArea.bottom; // _weexHeight-safeArea.bottom;
+    _instance.frame = CGRectMake(self.view.frame.size.width-width, 0, width, height);
     
     __weak typeof(self) weakSelf = self;
     _instance.onCreate = ^(UIView *view) {
