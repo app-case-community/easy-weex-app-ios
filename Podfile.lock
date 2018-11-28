@@ -2,14 +2,21 @@ PODS:
   - BindingX (1.0.3):
     - WeexPluginLoader
     - WeexSDK
+  - GCanvas (0.1.2)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
   - SocketRocket (0.4.2)
+  - WeexGcanvas (0.1.2):
+    - GCanvas
+    - SDWebImage
+    - WeexPluginLoader
+    - WeexSDK
   - WeexKit (0.0.1):
     - BindingX (~> 1.0.3)
     - SDWebImage (= 3.7.5)
     - SocketRocket (= 0.4.2)
+    - WeexGcanvas
     - WeexSDK (~> 0.19.0)
   - WeexPluginLoader (0.0.1.9.1):
     - WeexSDK
@@ -21,8 +28,10 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BindingX
+    - GCanvas
     - SDWebImage
     - SocketRocket
+    - WeexGcanvas
     - WeexPluginLoader
     - WeexSDK
 
@@ -32,9 +41,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BindingX: b3c6c1c5dcd8e50277cfc5daad09d7010c227524
+  GCanvas: 865486a8496df80352ae176914db0b63798b9caa
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
-  WeexKit: 4776191a5ba9a0639d814d7cf2ba92f00c28ad55
+  WeexGcanvas: 63d83d8b5e735172ae375649c72063c71125d289
+  WeexKit: f597934cc44a0fe3c91b3b7ed06fbe5bb407ceed
   WeexPluginLoader: 85c1304f8ba29864e58531614a0acfeceef1b85c
   WeexSDK: 0515e386d0eae3400ed8e55f31f198ae35acce44
 

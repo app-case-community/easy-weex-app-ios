@@ -142,5 +142,6 @@ Pod::Spec.new do |s|
   s.dependency "SDWebImage", "3.7.5"
   s.dependency "SocketRocket", "0.4.2"
   s.dependency "BindingX", "~> 1.0.3"
+  s.dependency "WeexGcanvas"
 
 end

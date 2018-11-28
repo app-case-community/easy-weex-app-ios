@@ -17,6 +17,9 @@
 #import <BindingX/EBWXModule.h>
 #import <BindingX/EBWXOldModule.h>
 
+#import <WeexGcanvas/WXGCanvasComponent.h>
+#import <WeexGcanvas/WXGCanvasModule.h>
+
 @implementation WeexKit
 
 +(void)initWeex {
@@ -40,6 +43,8 @@
     [WXSDKEngine registerModule:@"binding" withClass:[EBWXModule class]];
     [WXSDKEngine registerModule:@"expressionBinding" withClass:[EBWXOldModule class]];
 
+    [WXSDKEngine registerComponent:@"gcanvas" withClass:[WXGCanvasComponent class]];
+    [WXSDKEngine registerModule:@"gcanvas" withClass:[WXGCanvasModule class]];
 }
 
 @end
