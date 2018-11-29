@@ -27,6 +27,7 @@
 #import "WXPrerenderManager.h"
 #import "WXMonitor.h"
 #import "WXTracingManager.h"
+#import <SVProgressHUD/SVProgressHUD.h>
 
 @interface WXDemoViewController () <UIScrollViewDelegate, UIWebViewDelegate>
 @property (nonatomic, strong) WXSDKInstance *instance;
@@ -64,6 +65,7 @@
     _weexHeight = self.view.frame.size.height - CGRectGetMaxY(self.navigationController.navigationBar.frame);
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationRefreshInstance:) name:@"RefreshInstance" object:nil];
     [self render];
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -147,10 +149,12 @@
         weakSelf.weexView = view;
         [weakSelf.view addSubview:weakSelf.weexView];
         UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, weakSelf.weexView);
+        [SVProgressHUD show];
     };
     _instance.onFailed = ^(NSError *error) {
         if ([[error domain] isEqualToString:@"1"]) {
             dispatch_async(dispatch_get_main_queue(), ^{
+                [SVProgressHUD dismiss];
                 NSMutableString *errMsg=[NSMutableString new];
                 [errMsg appendFormat:@"ErrorType:%@\n",[error domain]];
                 [errMsg appendFormat:@"ErrorCode:%ld\n",(long)[error code]];
@@ -165,6 +169,9 @@
     _instance.renderFinish = ^(UIView *view) {
          WXLogDebug(@"%@", @"Render Finish...");
         [weakSelf updateInstanceState:WeexInstanceAppear];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [SVProgressHUD dismiss];
+        });
     };
     
     _instance.updateFinish = ^(UIView *view) {
