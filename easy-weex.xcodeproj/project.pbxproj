@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5D15F33E21ABBA340041EA7D /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D15F33D21ABBA340041EA7D /* Test.swift */; };
+		5D46E31021B231C6004CB944 /* lottie in Resources */ = {isa = PBXBuildFile; fileRef = 5D46E30F21B231C6004CB944 /* lottie */; };
 		5DCBCCED21ABB98A00246774 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBCCEC21ABB98A00246774 /* AppDelegate.m */; };
 		5DCBCCF021ABB98A00246774 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBCCEF21ABB98A00246774 /* ViewController.m */; };
 		5DCBCCF321ABB98A00246774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCBCCF121ABB98A00246774 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		3606AEDD684DAE69EFC5026C /* Pods-easy-weex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easy-weex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-easy-weex/Pods-easy-weex.debug.xcconfig"; sourceTree = "<group>"; };
 		5D15F33C21ABBA340041EA7D /* easy-weex-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "easy-weex-Bridging-Header.h"; sourceTree = "<group>"; };
 		5D15F33D21ABBA340041EA7D /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		5D46E30F21B231C6004CB944 /* lottie */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lottie; sourceTree = "<group>"; };
 		5DCBCCE821ABB98A00246774 /* easy-weex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "easy-weex.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCBCCEB21ABB98A00246774 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5DCBCCEC21ABB98A00246774 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		5DCBCCEA21ABB98A00246774 /* easy-weex */ = {
 			isa = PBXGroup;
 			children = (
+				5D46E30F21B231C6004CB944 /* lottie */,
 				5DCBCCEB21ABB98A00246774 /* AppDelegate.h */,
 				5DCBCCEC21ABB98A00246774 /* AppDelegate.m */,
 				5DCBCCEE21ABB98A00246774 /* ViewController.h */,
@@ -163,6 +166,7 @@
 				5DCBCCF821ABB98B00246774 /* LaunchScreen.storyboard in Resources */,
 				5DCBCCF521ABB98B00246774 /* Assets.xcassets in Resources */,
 				5DCBCCF321ABB98A00246774 /* Main.storyboard in Resources */,
+				5D46E31021B231C6004CB944 /* lottie in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +188,7 @@
 				"${BUILT_PRODUCTS_DIR}/WeexGcanvas/WeexGcanvas.framework",
 				"${BUILT_PRODUCTS_DIR}/WeexKit/WeexKit.framework",
 				"${BUILT_PRODUCTS_DIR}/WeexSDK/WeexSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -195,6 +200,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WeexGcanvas.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WeexKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WeexSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -376,7 +382,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UKPXZ3WW3W;
 				INFOPLIST_FILE = "easy-weex/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "top.flyme.easy-weex";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "easy-weex/easy-weex-Bridging-Header.h";
@@ -395,7 +404,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UKPXZ3WW3W;
 				INFOPLIST_FILE = "easy-weex/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "top.flyme.easy-weex";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "easy-weex/easy-weex-Bridging-Header.h";

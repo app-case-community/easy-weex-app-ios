@@ -3,6 +3,7 @@ PODS:
     - WeexPluginLoader
     - WeexSDK
   - GCanvas (0.1.2)
+  - lottie-ios (2.5.2)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
@@ -15,6 +16,7 @@ PODS:
     - WeexSDK
   - WeexKit (0.0.1):
     - BindingX (~> 1.0.3)
+    - lottie-ios
     - SDWebImage (= 3.7.5)
     - SocketRocket (= 0.4.2)
     - SVProgressHUD
@@ -31,6 +33,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BindingX
     - GCanvas
+    - lottie-ios
     - SDWebImage
     - SocketRocket
     - SVProgressHUD
@@ -45,11 +48,12 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   BindingX: b3c6c1c5dcd8e50277cfc5daad09d7010c227524
   GCanvas: 865486a8496df80352ae176914db0b63798b9caa
+  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   WeexGcanvas: 63d83d8b5e735172ae375649c72063c71125d289
-  WeexKit: 0104af3945d74c1e36c8927f1181db61d67d8199
+  WeexKit: 4910b740da4bbe817ac5913a8aa3e2bde241060b
   WeexPluginLoader: 85c1304f8ba29864e58531614a0acfeceef1b85c
   WeexSDK: 0515e386d0eae3400ed8e55f31f198ae35acce44
 

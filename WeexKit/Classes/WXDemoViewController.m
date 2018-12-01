@@ -78,6 +78,7 @@
 {
     [super viewDidDisappear:animated];
     [self updateInstanceState:WeexInstanceDisappear];
+    [SVProgressHUD dismiss];
 }
 
 - (void)viewWillAppear:(BOOL)animated

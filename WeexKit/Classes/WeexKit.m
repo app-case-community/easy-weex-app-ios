@@ -20,6 +20,8 @@
 #import <WeexGcanvas/WXGCanvasComponent.h>
 #import <WeexGcanvas/WXGCanvasModule.h>
 
+#import "WXLottieComponent.h"
+
 @implementation WeexKit
 
 +(void)initWeex {
@@ -45,6 +47,8 @@
 
     [WXSDKEngine registerComponent:@"gcanvas" withClass:[WXGCanvasComponent class]];
     [WXSDKEngine registerModule:@"gcanvas" withClass:[WXGCanvasModule class]];
+    
+    [WXSDKEngine registerComponent:@"lottie" withClass:[WXLottieComponent class]];
 }
 
 @end
