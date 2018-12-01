@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5D15F33E21ABBA340041EA7D /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D15F33D21ABBA340041EA7D /* Test.swift */; };
 		5D46E31021B231C6004CB944 /* lottie in Resources */ = {isa = PBXBuildFile; fileRef = 5D46E30F21B231C6004CB944 /* lottie */; };
+		5D46E31221B27CE3004CB944 /* f2 in Resources */ = {isa = PBXBuildFile; fileRef = 5D46E31121B27CE3004CB944 /* f2 */; };
 		5DCBCCED21ABB98A00246774 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBCCEC21ABB98A00246774 /* AppDelegate.m */; };
 		5DCBCCF021ABB98A00246774 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBCCEF21ABB98A00246774 /* ViewController.m */; };
 		5DCBCCF321ABB98A00246774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCBCCF121ABB98A00246774 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		5D15F33C21ABBA340041EA7D /* easy-weex-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "easy-weex-Bridging-Header.h"; sourceTree = "<group>"; };
 		5D15F33D21ABBA340041EA7D /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		5D46E30F21B231C6004CB944 /* lottie */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lottie; sourceTree = "<group>"; };
+		5D46E31121B27CE3004CB944 /* f2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = f2; sourceTree = "<group>"; };
 		5DCBCCE821ABB98A00246774 /* easy-weex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "easy-weex.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCBCCEB21ABB98A00246774 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5DCBCCEC21ABB98A00246774 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 		5DCBCCEA21ABB98A00246774 /* easy-weex */ = {
 			isa = PBXGroup;
 			children = (
+				5D46E31121B27CE3004CB944 /* f2 */,
 				5D46E30F21B231C6004CB944 /* lottie */,
 				5DCBCCEB21ABB98A00246774 /* AppDelegate.h */,
 				5DCBCCEC21ABB98A00246774 /* AppDelegate.m */,
@@ -163,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D46E31221B27CE3004CB944 /* f2 in Resources */,
 				5DCBCCF821ABB98B00246774 /* LaunchScreen.storyboard in Resources */,
 				5DCBCCF521ABB98B00246774 /* Assets.xcassets in Resources */,
 				5DCBCCF321ABB98A00246774 /* Main.storyboard in Resources */,

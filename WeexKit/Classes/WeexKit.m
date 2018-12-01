@@ -14,6 +14,8 @@
 #import "WXNavigationHandlerImpl.h"
 #import "WXSyncTestModule.h"
 
+#import "WXWeb.h"
+
 #import <BindingX/EBWXModule.h>
 #import <BindingX/EBWXOldModule.h>
 
@@ -35,6 +37,8 @@
     [WXSDKEngine registerHandler:[WXEventModule new] withProtocol:@protocol(WXEventModuleProtocol)];
     [WXSDKEngine registerHandler:[WXConfigCenterDefaultImpl new] withProtocol:@protocol(WXConfigCenterProtocol)];
     [WXSDKEngine registerHandler:[WXNavigationHandlerImpl new] withProtocol:@protocol(WXNavigationProtocol)];
+    
+    [WXSDKEngine registerComponent:@"web" withClass:[WXWeb class]];
     
     [WXSDKEngine registerComponent:@"select" withClass:NSClassFromString(@"WXSelectComponent")];
     [WXSDKEngine registerModule:@"event" withClass:[WXEventModule class]];
