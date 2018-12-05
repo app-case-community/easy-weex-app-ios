@@ -89,7 +89,9 @@
     NSURL * url = [NSURL URLWithString:src];
     if (url.isFileURL) {
         // local url
-        [self updateAnimationView:[LOTAnimationView animationWithFilePath:url.path]];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self updateAnimationView:[LOTAnimationView animationWithFilePath:url.path]];
+        });
     } else {
         // remote url
         WXResourceRequest * resourceRequest = [WXResourceRequest requestWithURL:url resourceType:WXResourceTypeLink referrer:@"" cachePolicy:NSURLRequestUseProtocolCachePolicy];
@@ -136,6 +138,8 @@
         [_animationView removeFromSuperview];
     }
     _animationView = newAnimationView;
+    _animationView.contentMode = UIViewContentModeScaleAspectFill;
+    _animationView.frame = self.bounds;
     [self addSubview: newAnimationView];
     [_animationView setFrame:self.bounds];
     [self applyAnimationProperties];

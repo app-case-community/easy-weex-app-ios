@@ -12,6 +12,9 @@
 		5D46E31221B27CE3004CB944 /* f2 in Resources */ = {isa = PBXBuildFile; fileRef = 5D46E31121B27CE3004CB944 /* f2 */; };
 		5D46E34B21B69AAA004CB944 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D46E34A21B69AAA004CB944 /* SecondViewController.m */; };
 		5D46E34E21B69FBA004CB944 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D46E34D21B69FBA004CB944 /* SecondViewController.xib */; };
+		5D56071421B8020A00A00172 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 5D56071321B8020A00A00172 /* fonts */; };
+		5D56071621B8021700A00172 /* imgs in Resources */ = {isa = PBXBuildFile; fileRef = 5D56071521B8021700A00172 /* imgs */; };
+		5D56071821B8022300A00172 /* pages in Resources */ = {isa = PBXBuildFile; fileRef = 5D56071721B8022300A00172 /* pages */; };
 		5DCBCCED21ABB98A00246774 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBCCEC21ABB98A00246774 /* AppDelegate.m */; };
 		5DCBCCF021ABB98A00246774 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBCCEF21ABB98A00246774 /* ViewController.m */; };
 		5DCBCCF321ABB98A00246774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCBCCF121ABB98A00246774 /* Main.storyboard */; };
@@ -31,6 +34,9 @@
 		5D46E34A21B69AAA004CB944 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		5D46E34C21B69B1F004CB944 /* Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
 		5D46E34D21B69FBA004CB944 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		5D56071321B8020A00A00172 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
+		5D56071521B8021700A00172 /* imgs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = imgs; sourceTree = "<group>"; };
+		5D56071721B8022300A00172 /* pages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pages; sourceTree = "<group>"; };
 		5DCBCCE821ABB98A00246774 /* easy-weex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "easy-weex.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCBCCEB21ABB98A00246774 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5DCBCCEC21ABB98A00246774 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -79,7 +85,10 @@
 			isa = PBXGroup;
 			children = (
 				5D46E31121B27CE3004CB944 /* f2 */,
+				5D56071321B8020A00A00172 /* fonts */,
+				5D56071521B8021700A00172 /* imgs */,
 				5D46E30F21B231C6004CB944 /* lottie */,
+				5D56071721B8022300A00172 /* pages */,
 				5DCBCCEB21ABB98A00246774 /* AppDelegate.h */,
 				5DCBCCEC21ABB98A00246774 /* AppDelegate.m */,
 				5DCBCCEE21ABB98A00246774 /* ViewController.h */,
@@ -176,9 +185,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D56071821B8022300A00172 /* pages in Resources */,
 				5D46E31221B27CE3004CB944 /* f2 in Resources */,
 				5DCBCCF821ABB98B00246774 /* LaunchScreen.storyboard in Resources */,
 				5D46E34E21B69FBA004CB944 /* SecondViewController.xib in Resources */,
+				5D56071421B8020A00A00172 /* fonts in Resources */,
+				5D56071621B8021700A00172 /* imgs in Resources */,
 				5DCBCCF521ABB98B00246774 /* Assets.xcassets in Resources */,
 				5DCBCCF321ABB98A00246774 /* Main.storyboard in Resources */,
 				5D46E31021B231C6004CB944 /* lottie in Resources */,
@@ -400,7 +412,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UKPXZ3WW3W;
 				INFOPLIST_FILE = "easy-weex/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "top.flyme.easy-weex";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "easy-weex/easy-weex-Bridging-Header.h";
@@ -419,7 +434,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UKPXZ3WW3W;
 				INFOPLIST_FILE = "easy-weex/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "top.flyme.easy-weex";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "easy-weex/easy-weex-Bridging-Header.h";

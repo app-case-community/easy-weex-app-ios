@@ -13,6 +13,7 @@
 #import "WXConfigCenterDefaultImpl.h"
 #import "WXNavigationHandlerImpl.h"
 #import "WXSyncTestModule.h"
+#import "WXURLRewriteImpl.h"
 
 #import "WXWeb.h"
 
@@ -37,6 +38,7 @@
     [WXSDKEngine registerHandler:[WXEventModule new] withProtocol:@protocol(WXEventModuleProtocol)];
     [WXSDKEngine registerHandler:[WXConfigCenterDefaultImpl new] withProtocol:@protocol(WXConfigCenterProtocol)];
     [WXSDKEngine registerHandler:[WXNavigationHandlerImpl new] withProtocol:@protocol(WXNavigationProtocol)];
+    [WXSDKEngine registerHandler:[WXURLRewriteImpl new] withProtocol:@protocol(WXURLRewriteProtocol)];
     
     [WXSDKEngine registerComponent:@"web" withClass:[WXWeb class]];
     
