@@ -32,10 +32,9 @@
         NSLog(@"请输入");
         return;
     }
-    [[ORouter shareRutor] openRoute:[NSURL URLWithString:@"easy://second?test=123"]];
-//    WXDemoViewController * controller = [[WXDemoViewController alloc] init];
-//    controller.url = [NSURL URLWithString:self.urlField.text];
-//    [self.navigationController pushViewController:controller animated:YES];
+    WXDemoViewController * controller = [[WXDemoViewController alloc] init];
+    controller.url = [NSURL URLWithString:self.urlField.text];
+    [self.navigationController pushViewController:controller animated:YES];
     
 }
 
