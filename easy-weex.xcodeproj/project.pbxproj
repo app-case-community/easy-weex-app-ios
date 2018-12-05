@@ -10,6 +10,8 @@
 		5D15F33E21ABBA340041EA7D /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D15F33D21ABBA340041EA7D /* Test.swift */; };
 		5D46E31021B231C6004CB944 /* lottie in Resources */ = {isa = PBXBuildFile; fileRef = 5D46E30F21B231C6004CB944 /* lottie */; };
 		5D46E31221B27CE3004CB944 /* f2 in Resources */ = {isa = PBXBuildFile; fileRef = 5D46E31121B27CE3004CB944 /* f2 */; };
+		5D46E34B21B69AAA004CB944 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D46E34A21B69AAA004CB944 /* SecondViewController.m */; };
+		5D46E34E21B69FBA004CB944 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D46E34D21B69FBA004CB944 /* SecondViewController.xib */; };
 		5DCBCCED21ABB98A00246774 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBCCEC21ABB98A00246774 /* AppDelegate.m */; };
 		5DCBCCF021ABB98A00246774 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCBCCEF21ABB98A00246774 /* ViewController.m */; };
 		5DCBCCF321ABB98A00246774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCBCCF121ABB98A00246774 /* Main.storyboard */; };
@@ -25,6 +27,10 @@
 		5D15F33D21ABBA340041EA7D /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		5D46E30F21B231C6004CB944 /* lottie */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lottie; sourceTree = "<group>"; };
 		5D46E31121B27CE3004CB944 /* f2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = f2; sourceTree = "<group>"; };
+		5D46E34921B69AAA004CB944 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		5D46E34A21B69AAA004CB944 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		5D46E34C21B69B1F004CB944 /* Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
+		5D46E34D21B69FBA004CB944 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		5DCBCCE821ABB98A00246774 /* easy-weex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "easy-weex.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCBCCEB21ABB98A00246774 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5DCBCCEC21ABB98A00246774 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +84,9 @@
 				5DCBCCEC21ABB98A00246774 /* AppDelegate.m */,
 				5DCBCCEE21ABB98A00246774 /* ViewController.h */,
 				5DCBCCEF21ABB98A00246774 /* ViewController.m */,
+				5D46E34921B69AAA004CB944 /* SecondViewController.h */,
+				5D46E34A21B69AAA004CB944 /* SecondViewController.m */,
+				5D46E34D21B69FBA004CB944 /* SecondViewController.xib */,
 				5DCBCCF121ABB98A00246774 /* Main.storyboard */,
 				5DCBCCF421ABB98B00246774 /* Assets.xcassets */,
 				5DCBCCF621ABB98B00246774 /* LaunchScreen.storyboard */,
@@ -85,6 +94,7 @@
 				5DCBCCFA21ABB98B00246774 /* main.m */,
 				5D15F33D21ABBA340041EA7D /* Test.swift */,
 				5D15F33C21ABBA340041EA7D /* easy-weex-Bridging-Header.h */,
+				5D46E34C21B69B1F004CB944 /* Router.h */,
 			);
 			path = "easy-weex";
 			sourceTree = "<group>";
@@ -117,7 +127,7 @@
 				5DCBCCE421ABB98A00246774 /* Sources */,
 				5DCBCCE521ABB98A00246774 /* Frameworks */,
 				5DCBCCE621ABB98A00246774 /* Resources */,
-				473BC2AE972D4CFD39FACFC8 /* [CP] Embed Pods Frameworks */,
+				F90704136DCF325ABD293041 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,6 +178,7 @@
 			files = (
 				5D46E31221B27CE3004CB944 /* f2 in Resources */,
 				5DCBCCF821ABB98B00246774 /* LaunchScreen.storyboard in Resources */,
+				5D46E34E21B69FBA004CB944 /* SecondViewController.xib in Resources */,
 				5DCBCCF521ABB98B00246774 /* Assets.xcassets in Resources */,
 				5DCBCCF321ABB98A00246774 /* Main.storyboard in Resources */,
 				5D46E31021B231C6004CB944 /* lottie in Resources */,
@@ -177,40 +188,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		473BC2AE972D4CFD39FACFC8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-easy-weex/Pods-easy-weex-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BindingX/BindingX.framework",
-				"${BUILT_PRODUCTS_DIR}/GCanvas/GCanvas.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
-				"${BUILT_PRODUCTS_DIR}/WeexGcanvas/WeexGcanvas.framework",
-				"${BUILT_PRODUCTS_DIR}/WeexKit/WeexKit.framework",
-				"${BUILT_PRODUCTS_DIR}/WeexSDK/WeexSDK.framework",
-				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BindingX.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCanvas.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WeexGcanvas.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WeexKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WeexSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-easy-weex/Pods-easy-weex-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D556485E1CB09AB854FB85F3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,6 +206,42 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F90704136DCF325ABD293041 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-easy-weex/Pods-easy-weex-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BindingX/BindingX.framework",
+				"${BUILT_PRODUCTS_DIR}/GCanvas/GCanvas.framework",
+				"${BUILT_PRODUCTS_DIR}/ORouter/ORouter.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${BUILT_PRODUCTS_DIR}/WeexGcanvas/WeexGcanvas.framework",
+				"${BUILT_PRODUCTS_DIR}/WeexKit/WeexKit.framework",
+				"${BUILT_PRODUCTS_DIR}/WeexSDK/WeexSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BindingX.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCanvas.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ORouter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WeexGcanvas.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WeexKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WeexSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-easy-weex/Pods-easy-weex-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -236,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D46E34B21B69AAA004CB944 /* SecondViewController.m in Sources */,
 				5DCBCCF021ABB98A00246774 /* ViewController.m in Sources */,
 				5D15F33E21ABBA340041EA7D /* Test.swift in Sources */,
 				5DCBCCFB21ABB98B00246774 /* main.m in Sources */,
@@ -386,10 +400,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UKPXZ3WW3W;
 				INFOPLIST_FILE = "easy-weex/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "top.flyme.easy-weex";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "easy-weex/easy-weex-Bridging-Header.h";
@@ -408,10 +419,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UKPXZ3WW3W;
 				INFOPLIST_FILE = "easy-weex/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "top.flyme.easy-weex";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "easy-weex/easy-weex-Bridging-Header.h";

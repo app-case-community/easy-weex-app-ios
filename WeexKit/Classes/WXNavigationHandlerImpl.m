@@ -20,6 +20,7 @@
 #import "WXNavigationHandlerImpl.h"
 #import "WXDemoViewController.h"
 #import <WeexSDK/WeexSDK.h>
+#import <ORouter/ORouter.h>
 
 @implementation WXNavigationHandlerImpl
 
@@ -43,16 +44,25 @@
 }
 
 - (void)pushViewControllerWithParam:(NSDictionary *)param completion:(WXNavigationResultBlock)block withContainer:(UIViewController *)container {
-    BOOL animated = YES;
-    NSString *obj = [[param objectForKey:@"animated"] lowercaseString];
-    if (obj && [obj isEqualToString:@"false"]) {
-        animated = NO;
+    NSURL *url = [NSURL URLWithString:param[@"url"]];
+    NSArray<NSString*>* weexSchemes = @[@"local",@"http",@"https"];
+    if ([weexSchemes containsObject:url.scheme]) {
+        BOOL animated = YES;
+        NSString *obj = [[param objectForKey:@"animated"] lowercaseString];
+        if (obj && [obj isEqualToString:@"false"]) {
+            animated = NO;
+        }
+        WXDemoViewController *vc = [[WXDemoViewController alloc] init];
+        vc.url = url;
+        vc.hidesBottomBarWhenPushed = YES;
+        [container.navigationController pushViewController:vc animated:animated];
+    } else {
+        if ([[UIApplication sharedApplication] canOpenURL:url]) {
+            [[UIApplication sharedApplication] openURL:url];
+        } else {
+            [[ORouter shareRutor] openRoute:url];
+        }
     }
-    
-    WXDemoViewController *vc = [[WXDemoViewController alloc] init];
-    vc.url = [NSURL URLWithString:param[@"url"]];
-    vc.hidesBottomBarWhenPushed = YES;
-    [container.navigationController pushViewController:vc animated:animated];
 }
 
 - (void)setNavigationBackgroundColor:(UIColor *)backgroundColor withContainer:(UIViewController *)container {

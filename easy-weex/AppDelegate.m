@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import <WeexKit/WeexKit.h>
+#import <WeexSDK/WeexSDK.h>
+#import <ORouter/ORouter.h>
 
 @interface AppDelegate ()
 
@@ -15,10 +17,10 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [WeexKit initWeex];
+    [ORouter autoLoad];
     return YES;
 }
 
@@ -49,5 +51,8 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    return YES;
+}
 
 @end

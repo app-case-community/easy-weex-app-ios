@@ -145,5 +145,6 @@ Pod::Spec.new do |s|
   s.dependency "WeexGcanvas"
   s.dependency 'SVProgressHUD'
   s.dependency 'lottie-ios'
+  s.dependency 'ORouter'
 
 end
