@@ -4,7 +4,7 @@ PODS:
     - WeexSDK
   - GCanvas (0.1.2)
   - lottie-ios (2.5.2)
-  - ORouter (0.0.2)
+  - ORouter (0.0.3)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
@@ -18,7 +18,7 @@ PODS:
   - WeexKit (0.0.1):
     - BindingX (~> 1.0.3)
     - lottie-ios
-    - ORouter
+    - ORouter (~> 0.0.3)
     - SDWebImage (= 3.7.5)
     - SocketRocket (= 0.4.2)
     - SVProgressHUD
@@ -52,12 +52,12 @@ SPEC CHECKSUMS:
   BindingX: b3c6c1c5dcd8e50277cfc5daad09d7010c227524
   GCanvas: 865486a8496df80352ae176914db0b63798b9caa
   lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
-  ORouter: 9bdaf5f513aba3b7b7c5cc60dc8d746862998d72
+  ORouter: 2b50ac38dfc5356dccc0a1dc4b42eb085e22d40d
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   WeexGcanvas: 63d83d8b5e735172ae375649c72063c71125d289
-  WeexKit: 142d794bb5be12ef4d9c77286344930ea2d0bfb2
+  WeexKit: c418e7ba9972d2767ea4284552dbe8d6267e5898
   WeexPluginLoader: 85c1304f8ba29864e58531614a0acfeceef1b85c
   WeexSDK: 0515e386d0eae3400ed8e55f31f198ae35acce44
 
