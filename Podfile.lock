@@ -2,7 +2,6 @@ PODS:
   - BindingX (1.0.3):
     - WeexPluginLoader
     - WeexSDK
-  - GCanvas (0.1.2)
   - lottie-ios (2.5.2)
   - ORouter (0.0.3)
   - SDWebImage (3.7.5):
@@ -10,57 +9,54 @@ PODS:
   - SDWebImage/Core (3.7.5)
   - SocketRocket (0.4.2)
   - SVProgressHUD (2.2.5)
-  - WeexGcanvas (0.1.2):
-    - GCanvas
-    - SDWebImage
-    - WeexPluginLoader
-    - WeexSDK
-  - WeexKit (0.0.1):
+  - WeexKit (0.1.0):
     - BindingX (~> 1.0.3)
-    - lottie-ios
+    - lottie-ios (= 2.5.2)
     - ORouter (~> 0.0.3)
     - SDWebImage (= 3.7.5)
     - SocketRocket (= 0.4.2)
     - SVProgressHUD
-    - WeexGcanvas
-    - WeexSDK (~> 0.19.0)
+    - WeexSDK
   - WeexPluginLoader (0.0.1.9.1):
     - WeexSDK
-  - WeexSDK (0.19.0.2)
+  - WeexSDK (0.26.0)
 
 DEPENDENCIES:
   - WeexKit (from `./WeexKit`)
+  - WeexSDK (from `https://github.com/apache/incubator-weex.git`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BindingX
-    - GCanvas
     - lottie-ios
     - ORouter
     - SDWebImage
     - SocketRocket
     - SVProgressHUD
-    - WeexGcanvas
     - WeexPluginLoader
-    - WeexSDK
 
 EXTERNAL SOURCES:
   WeexKit:
     :path: "./WeexKit"
+  WeexSDK:
+    :git: https://github.com/apache/incubator-weex.git
+
+CHECKOUT OPTIONS:
+  WeexSDK:
+    :commit: 007539e61768f838065123a48a34a59229f39f9e
+    :git: https://github.com/apache/incubator-weex.git
 
 SPEC CHECKSUMS:
   BindingX: b3c6c1c5dcd8e50277cfc5daad09d7010c227524
-  GCanvas: 865486a8496df80352ae176914db0b63798b9caa
   lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
   ORouter: 2b50ac38dfc5356dccc0a1dc4b42eb085e22d40d
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  WeexGcanvas: 63d83d8b5e735172ae375649c72063c71125d289
-  WeexKit: c418e7ba9972d2767ea4284552dbe8d6267e5898
+  WeexKit: 3f6279480550af2719f6d14ab17e26833190a04b
   WeexPluginLoader: 85c1304f8ba29864e58531614a0acfeceef1b85c
-  WeexSDK: 0515e386d0eae3400ed8e55f31f198ae35acce44
+  WeexSDK: 88254d7a8c3b4c6c26a2e00c76faec858be8307f
 
-PODFILE CHECKSUM: 7b4e27866a4cea2d0a9cb0a9fc0c49825f8ba7df
+PODFILE CHECKSUM: a50768c4f5565e757ad7012eb5b0c099f926afed
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.5

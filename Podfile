@@ -22,5 +22,8 @@ post_install do |installer|
 end  
 
 target 'easy-weex' do
+    pod 'WeexSDK', :git => 'https://github.com/apache/incubator-weex.git'
+    # pod 'GCanvas', :git => 'https://github.com/snice/GCanvas.git', :branch => 'develop'
+    # pod 'WeexGcanvas', :git => 'https://github.com/alibaba/GCanvas.git'
     pod 'WeexKit', :path=>'./WeexKit'
 end

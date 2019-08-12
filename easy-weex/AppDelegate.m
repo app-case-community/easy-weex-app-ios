@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import <WeexKit/WeexKit.h>
-#import <WeexSDK/WeexSDK.h>
 #import <ORouter/ORouter.h>
 
 @interface AppDelegate ()

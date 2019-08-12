@@ -20,7 +20,7 @@
 #import <WeexSDK/WeexSDK.h>
 #import "WXScannerVC.h"
 #import "WXDemoViewController.h"
-#import "WXDebugTool.h"
+// #import "WXDebugTool.h"
 
 //#import <TBWXDevTool/WXDevTool.h>
 #import <AudioToolbox/AudioToolbox.h>

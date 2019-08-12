@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.urlField.text = @"http://oss.zhuzhe.wang/dist/weex/js/index.js";
+    self.urlField.text = @"https://snice.oss-cn-hangzhou.aliyuncs.com/dist/weex/js/index.js";
     // Do any additional setup after loading the view, typically from a nib.
 }
 - (IBAction)openScan:(id)sender {

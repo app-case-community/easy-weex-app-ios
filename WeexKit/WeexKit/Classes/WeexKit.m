@@ -20,8 +20,8 @@
 #import <BindingX/EBWXModule.h>
 #import <BindingX/EBWXOldModule.h>
 
-#import <WeexGcanvas/WXGCanvasComponent.h>
-#import <WeexGcanvas/WXGCanvasModule.h>
+// #import <WeexGcanvas/WXGCanvasComponent.h>
+// #import <WeexGcanvas/WXGCanvasModule.h>
 
 #import "WXLottieComponent.h"
 
@@ -51,8 +51,8 @@
     [WXSDKEngine registerModule:@"binding" withClass:[EBWXModule class]];
     [WXSDKEngine registerModule:@"expressionBinding" withClass:[EBWXOldModule class]];
 
-    [WXSDKEngine registerComponent:@"gcanvas" withClass:[WXGCanvasComponent class]];
-    [WXSDKEngine registerModule:@"gcanvas" withClass:[WXGCanvasModule class]];
+    // [WXSDKEngine registerComponent:@"gcanvas" withClass:[WXGCanvasComponent class]];
+    // [WXSDKEngine registerModule:@"gcanvas" withClass:[WXGCanvasModule class]];
     
     [WXSDKEngine registerComponent:@"lottie" withClass:[WXLottieComponent class]];
 }

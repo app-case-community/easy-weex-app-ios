@@ -21,12 +21,10 @@
 #import <WeexSDK/WXSDKInstance.h>
 #import <WeexSDK/WXSDKEngine.h>
 #import <WeexSDK/WXUtility.h>
-#import <WeexSDK/WXDebugTool.h>
 #import <WeexSDK/WXSDKManager.h>
 #import "DemoDefine.h"
 #import "WXPrerenderManager.h"
 #import "WXMonitor.h"
-#import "WXTracingManager.h"
 #import <SVProgressHUD/SVProgressHUD.h>
 
 @interface WXDemoViewController () <UIScrollViewDelegate, UIWebViewDelegate>
